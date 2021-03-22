@@ -433,6 +433,7 @@ height: 100px;
 
 .koteret {
     text-align: center;
+    display:block;
     color: $green;
     font-size: 40px;
     text-shadow: 0 0 3px black, 0 0 5px black;
@@ -446,6 +447,7 @@ height: 100px;
 
 .pKoteret {
     font-size: 18px;
+    display: block;
 }
 
 
@@ -485,7 +487,7 @@ box-shadow: black 0px 0px 10px 1px;
 margin: 10px 0px 10px 10px !important;
 color: $black1;
 max-width: 160px;
-max-height: 300px;
+max-height: 260px;
 flex-wrap: wrap;
 
 }
