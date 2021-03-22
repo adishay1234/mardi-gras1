@@ -1329,7 +1329,7 @@ section .section-title {
 
 @media all and (max-width: 480px) {
   .logoHotelAll {
-    height: 15px !important;
+    height: 17px !important;
   }
   .myLogos {
     padding: 0px 0px 0px 0px !important;
