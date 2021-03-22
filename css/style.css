@@ -12,26 +12,124 @@ body {
   width: 100%;
 }
 
+body h1 {
+  font-family: "Henny Penny", cursive !important;
+}
+
+body h3, body h4, body h5, body h6, body h2 {
+  font-family: "Pattaya", sans-serif !important;
+}
+
+.latoyaMAin {
+  padding: 8% !important;
+  margin: 0px 0px 0px 0px;
+}
+
+.latoyaAndYou {
+  margin: 0px 0px 0px 0px;
+  padding: 0px 0px 0px 0px;
+}
+
+.video-responsive {
+  overflow: hidden;
+  padding-bottom: 56.25%;
+  position: relative;
+  height: 0;
+  border-radius: 15px;
+}
+
+.video-responsive iframe {
+  left: 0;
+  top: 0;
+  height: 100%;
+  width: 100%;
+  position: absolute;
+}
+
 .coursesMy {
   background: #F2F2F2 !important;
   padding: 60px 0px 0px 0px !important;
+}
+
+.search {
+  display: inline-block;
+  position: relative;
+  height: 35px;
+  width: 35px;
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
+  margin: 0px 25px 12px 0px;
+  padding: 7px 20px 0px 9px;
+  border: 3px solid #F2F2F2;
+  border-radius: 25px;
+  -webkit-transition: all 200ms ease;
+  transition: all 200ms ease;
+  cursor: text;
+}
+
+.search:after {
+  content: "";
+  position: absolute;
+  width: 3px;
+  height: 20px;
+  right: -5px;
+  top: 21px;
+  background: #F2F2F2;
+  border-radius: 3px;
+  -webkit-transform: rotate(-45deg);
+          transform: rotate(-45deg);
+  -webkit-transition: all 200ms ease;
+  transition: all 200ms ease;
+}
+
+.search.active, .search:hover {
+  width: 200px;
+  margin-right: 0px 20px 0px 0px;
+}
+
+.search.active:after, .search:hover:after {
+  height: 0px;
+}
+
+.search input {
+  width: 100%;
+  border: none;
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
+  border: hidden;
+  font-family: Helvetica;
+  font-size: 15px;
+  color: inherit;
+  background: transparent;
+  outline-width: 0px;
+  border: 0px !important;
 }
 
 .myNav {
   padding: 0px 0px 0px 0px;
   margin: 0px 0px 0px 0px;
   font-size: 20px;
-  font-family: "Pattaya", sans-serif;
+  font-family: 'roboto';
+  font-weight: 500;
   position: fixed;
+  font-style: italic;
   z-index: 2;
-  background: #F2CC0F !important;
+  background: url("../image/back3.jpg");
   width: 100%;
   border-radius: 0px;
   height: 60px;
 }
 
+.myNav a {
+  color: #F2F2F2 !important;
+}
+
 .myNav .show {
-  background-color: #F2CC0F;
+  background-color: #9453A6;
+}
+
+.myNav .nav-item {
+  color: white !important;
 }
 
 .myNav .search2 {
@@ -109,6 +207,14 @@ body {
           justify-content: space-between;
 }
 
+.glyphicon {
+  color: #9453A6;
+}
+
+.glyphicon:hover {
+  color: #F2CC0F;
+}
+
 .bigBig {
   display: -webkit-box;
   display: -ms-flexbox;
@@ -153,13 +259,13 @@ body {
   top: 50px;
   right: 30px;
   z-index: 1;
-  background-color: #F2CC0F;
-  opacity: 0.9;
+  background-color: #9453A6;
+  color: #F2F2F2;
   -webkit-transform: rotate(10deg);
           transform: rotate(10deg);
   margin: 0px 0px 0px 0px;
-  -webkit-box-shadow: 10px 10px 20px;
-          box-shadow: 10px 10px 20px;
+  -webkit-box-shadow: 10px 10px 20px black;
+          box-shadow: 10px 10px 20px black;
 }
 
 .bigBig .bigDays .days:hover {
@@ -442,28 +548,9 @@ body {
   padding: 20px;
 }
 
-.latoyaMAin {
-  padding: 20px 20px 20px 20px;
-  margin: 0px 0px 0px 0px !important;
-  color: black;
-}
-
-.youTube {
-  -webkit-box-pack: center;
-      -ms-flex-pack: center;
-          justify-content: center;
-  display: -webkit-box;
-  display: -ms-flexbox;
-  display: flex;
-}
-
-.latoyaAndYou {
-  max-height: 400px;
-}
-
 .koteret {
   text-align: center;
-  color: #F2CC0F;
+  color: #8CBF3F;
   font-size: 40px;
   text-shadow: 0 0 3px black, 0 0 5px black;
   -webkit-animation: 3s move infinite;
@@ -472,7 +559,7 @@ body {
 }
 
 .koteret:hover {
-  color: #8CBF3F;
+  color: #F2CC0F;
 }
 
 .pKoteret {
@@ -537,10 +624,10 @@ body {
 }
 
 .submit {
-  background-color: #F2CC0F !important;
-  color: #0D0D0D !important;
+  background-color: #9453A6 !important;
   border: 1px solid black !important;
   font-size: 15px;
+  color: #F2F2F2 !important;
   font-family: "Pattaya", sans-serif;
 }
 
@@ -575,7 +662,6 @@ input[type=submit]:hover {
 
 .containerContent {
   border-radius: 5px;
-  border: 2px solid #F2CC0F;
   padding: 20px;
   color: #0D0D0D;
 }
@@ -729,6 +815,7 @@ input[type=submit]:hover {
 .event-list .event-item .event-participants .event-user .event-user-inital {
   font-size: 13px;
   line-height: 100%;
+  color: black !important;
 }
 
 .event-list .event-item .event-participants {
@@ -759,15 +846,16 @@ input[type=submit]:hover {
 }
 
 .bg-soft-primary {
-  background-color: #dce3fa;
+  background-color: #9453A6;
 }
 
 .bg-soft-danger {
-  background-color: #fedce0;
+  background-color: #F2CC0F;
+  color: black !important;
 }
 
 .bg-soft-info {
-  background-color: #d7efff;
+  background-color: #8CBF3F;
 }
 
 .bg-soft-success {
@@ -787,8 +875,8 @@ input[type=submit]:hover {
   top: 0;
   margin-left: 0;
   display: block !important;
-  background-image: -webkit-gradient(linear, left top, right top, from(#F2F2F2), to(transparent)) !important;
-  background-image: linear-gradient(to right, #F2F2F2, transparent) !important;
+  background-image: -webkit-gradient(linear, left top, right top, from(transparent)) !important;
+  background-image: linear-gradient(to right, transparent) !important;
 }
 
 .owl-prev .owl-nav-wrapper {
@@ -819,8 +907,8 @@ input[type=submit]:hover {
   top: 0;
   right: 0;
   display: block !important;
-  background-image: -webkit-gradient(linear, left top, right top, from(transparent), to(#F2F2F2)) !important;
-  background-image: linear-gradient(to right, transparent, #F2F2F2) !important;
+  background-image: -webkit-gradient(linear, left top, right top, from(transparent)) !important;
+  background-image: linear-gradient(to right, transparent) !important;
 }
 
 .owl-next .owl-nav-wrapper {
@@ -864,12 +952,17 @@ input[type=submit]:hover {
 }
 
 .text-primary, .task-list-wrapper .completed .remove {
-  color: #4e73e5 !important;
+  color: #F2CC0F !important;
 }
 
 .ReviewsOne {
   background-color: #9453A6;
   padding: 40px;
+  color: #F2F2F2;
+}
+
+.ReviewsOne h5 {
+  color: #F2CC0F;
 }
 
 .align-center {
@@ -1122,8 +1215,8 @@ img {
 }
 
 .single_course:hover .price {
-  background: #002347;
-  color: #fdc632;
+  background: #9453A6;
+  color: #F2F2F2;
 }
 
 .single_course:hover h4 a {
