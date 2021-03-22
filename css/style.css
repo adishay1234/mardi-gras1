@@ -279,7 +279,7 @@ body h3, body h4, body h5, body h6, body h2 {
 .sponser {
   margin-top: 0px;
   margin-bottom: 0px;
-  padding: 10px 0px 10px 0px;
+  padding: 10px 0px 0px 0px;
   -ms-flex-pack: distribute;
       justify-content: space-around;
   -ms-flex-wrap: wrap;
@@ -1328,6 +1328,9 @@ section .section-title {
 }
 
 @media all and (max-width: 480px) {
+  .logoHotelAll {
+    height: 15px !important;
+  }
   .myLogos {
     padding: 0px 0px 0px 0px !important;
     margin: 0px 0px 0px 0px !important;
@@ -1340,6 +1343,18 @@ section .section-title {
 @media all and (max-width: 250px) {
   .logoBig {
     display: none !important;
+  }
+}
+
+@media all and (max-width: 1000px) {
+  .logoHotelAll {
+    height: 40px;
+  }
+}
+
+@media all and (max-width: 775px) {
+  .logoHotelAll {
+    height: 30px;
   }
 }
 /*# sourceMappingURL=style.css.map */

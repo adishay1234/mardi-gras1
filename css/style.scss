@@ -288,7 +288,7 @@ color: $purple;
 .sponser {
     margin-top: 0px;
     margin-bottom: 0px;
-    padding: 10px 0px 10px 0px;
+    padding: 10px 0px 0px 0px;
     justify-content: space-around;
     flex-wrap: wrap;
     display: flex;
@@ -1153,7 +1153,9 @@ section .section-title {
 }
 
 @media all and (max-width: 480px) { 
-
+    .logoHotelAll {
+        height: 15px !important;
+}
     .myLogos {
         padding: 0px 0px 0px 0px !important;
         margin: 0px 0px 0px 0px !important;}
@@ -1169,4 +1171,14 @@ section .section-title {
         display: none !important;
     }
 
+}
+@media all and (max-width: 1000px) {
+    .logoHotelAll {
+        height: 40px;
+}
+}
+@media all and (max-width: 775px) {
+    .logoHotelAll {
+        height: 30px;
+}
 }
